@@ -183,6 +183,7 @@ def tenis_test():
     fr = open('tennis.txt')
     weather = [inst.strip().split(',') for inst in fr.readlines()]
     weatherLabel = ['Outlook','Temp.','Humidity','Wind','Decision']
+    # weatherLabel=['age','prescript','astigmatic','tearRate','Decision']
     weatherTree = createTree(weather,weatherLabel)  # Crear árbol
     print(weatherTree)
     createPlot(weatherTree)  # Dibuja el árbol
